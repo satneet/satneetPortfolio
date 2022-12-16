@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+            Student name - Satneet Kaur
+            Student ID - 106932213
+        -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Satneet Portfolio</title>
+    </head>
+    <body>
+        <!-- first section showing one picture and my name and two buttons -->
+        <section id="topSection">
+            <img src="myImage.jpeg" alt="my portfolio image">
+            <h1>Satneet Kaur</h1>
+            <p>Front End Developer</p>
+            <div class="btnGroup">
+                <button class="linkBtn" id="resumeBtn">
+                    <a href="Satneetresume.docx" download="">  <i class="fa-solid fa-arrow-down"></i>  Resume</a>
+                </button>
+                <button class="linkBtn" id="contactBtn">
+                    <a href="#lastSection">Contact Me</a>
+                </button>
+            </div>
+        </section>
+
+        <!-- This section is showing academic honesty and some details off mine -->
+        <section id="infoSecion">
+            <div id="flexIt">
+                <div class="honestyDiv">
+                    <h2>About Me and Academic Honesty</h2>
+                    <p id="honestyText">
+                        I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
+                        No part of this assessment has been copied manually or electronically from any other source (including web sites) 
+                        except for the information supplied by the WEB222 instructors and / 
+                        or made available in this assessment for my use. 
+                        I also declare that no part of this assignment has been distributed to other students.
+                    </p>
+                    <p><strong>Date: </strong>Dec 16, 2022</p>
+                </div>
+                <div id="basicInfo">
+                    <h2 id="infoHeading">Basic Information</h2>
+                    <div id="container">
+                        <div id="left">
+                            <h4>AGE:</h4>
+                            <h4>EMAIL:</h4>
+                            <h4>LANGUAGE:</h4>
+                            <h4>CLASS SECTION:</h4>
+                            <h4>STUDENT ID:</h4>
+                            <h4>INSTRUCTOR:</h4>
+                        </div>
+                        <div id="right">
+                            <p>21</p>
+                            <p>satneet-kaur@senecacollege.ca</p>
+                            <p>English, Punjabi, Hindi</p>
+                            <p>ZBB</p>
+                            <p>106932213</p>
+                            <p>MARK MERRIT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- this section is showing about the education that I have accomplished and pursuing -->
+        <section id="myEduSection">
+            <h2>Education</h2>
+            <div class="eduRow">
+                <div class="eduleft">
+                    <p>2019</p>
+                    <h4>High School</h4>
+                </div>
+                <div class="eduright">
+                    <h3>High School</h3>
+                    <h4>Rishi senior secondary school</h4>
+                    <p>Under the supervision of <span class="supervisor">Dr. Awesome</span><br> Awarded with all scholarships in the world </p>
+                    <p></p>
+                </div>
+            </div> 
+            <div class="eduRow">
+                <div class="eduleft">
+                    <p>Ongoing</p>
+                    <h3>Bachelor's Degree</h3>
+                </div>
+                <div class="eduright">
+                    <h3>Computer Programming</h3>
+                    <h4>SENECA COLLEGE</h4>
+                    <p>Under the supervision of <span class="supervisor">Dr. Awesome</span><br> Awarded with all scholarships in the world </p>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- this section is a contact form -->
+        <section id="lastSection">
+            <h1>Contact Me</h1>
+            <form method="post" action="https://httpbin.org/post">
+                <label for="name">Name: </label>
+                <input type="text" name="name" required><br><br>
+
+                <label for="email">Email Address: </label>
+                <input type="email" name="email" required><br><br>
+                
+                <label for="phone">Phone Number: </label>
+                <input type="number" name="phone" required><br><br>
+
+                <label for="address">Address: </label>
+                <input type="text" name="address" required><br><br>
+
+                <label for="City">City:</label>
+                <input list="Cities" name="City" id="City">
+                <datalist id="Cities">
+                    <option value="Montreal">
+                    <option value="Edmonton">
+                    <option value="Ottawa">
+                    <option value="Québec City">
+                    <option value="Vancouver">
+                </datalist> <br><br>
+
+                <label for="pinCode">Postal Code: </label>
+                <input type="text" name="pinCode" required><br><br>
+                <div>
+                    <input type="radio" id="question" class="radioBtn" name="radioInput" value="Question" required>
+                    <label for="question">Question</label>
+                </div>
+                <div>
+                    <input type="radio" id="comment" class="radioBtn" name="radioInput" value="Comment" required>
+                    <label for="comment">Comment</label>
+                </div>
+                <div>
+                    <input type="radio" id="hiring" class="radioBtn" name="radioInput" value="Hiring" required>
+                    <label for="hiring">Hiring</label>
+                </div>
+    
+                <div id="hourlyRateEl"><br>
+                    <label for="rate">Hourly Rate: </label>
+                    <input  type="number" name="rate" id="rate">
+                </div><br><br>
+
+                <textarea placeholder="Enter your Message here" name="messageArea" cols="35" rows="5" required></textarea>
+                
+                <br><br>
+                <input id="submitForm" type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- this is the link to script that is being used to hide and show the element hourly rate  -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
